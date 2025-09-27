@@ -228,7 +228,7 @@ document.getElementById("totals").innerHTML = `
 
 // Xuất Excel từ template
 async function exportFromTemplate() {
-  const url = "https://raw.githubusercontent.com/saleadmin1-alt/bill-template/main/template.xlsx";
+  const url = "https://raw.githubusercontent.com/auryleather-bot/bill-template/main/template.xlsx";
   const response = await fetch(url);
   const buffer = await response.arrayBuffer();
   const workbook = await XlsxPopulate.fromDataAsync(buffer);
